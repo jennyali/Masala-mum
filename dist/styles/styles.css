@@ -1,0 +1,100 @@
+/*
+@1st-color: #FFB997;
+@2nd-color: #F67E7D;
+@3rd-color: #843B62;
+@4th-color: #0B032D;
+@5th-color: #74546A;
+*/
+body {
+  margin: 0px;
+  background-image: url('../images/CurryScrapBG.jpg');
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: left;
+  color: #080708;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  color: #FFFFFF;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+.header .head-nav {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.header .head-nav .ul-nav {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.header .head-nav .ul-nav li {
+  display: inline;
+  margin-right: 30px;
+}
+.header .social-media {
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 26px;
+  margin: 0px;
+}
+.header .social-media li {
+  display: inline;
+  margin-left: 10px;
+}
+.header-cover {
+  z-index: 2;
+  display: block;
+  position: relative;
+  top: 0px;
+  background-color: #080708;
+  height: 70px;
+  opacity: 0.4;
+}
+.input-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.input-box input {
+  margin-top: 20px;
+  height: 40px;
+  width: 400px;
+  font-size: 28px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.input-box button {
+  margin-top: 20px;
+  height: 40px;
+  width: 50px;
+  font-size: 24px;
+  padding: 0px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.titles {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+.titles h1 {
+  font-size: 72px;
+}
+.titles h3 {
+  font-size: 36px;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */

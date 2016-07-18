@@ -1,0 +1,163 @@
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+    .columns {
+        position: relative;
+        height: 100%;
+
+    }
+
+    .first{
+        flex: 0 0 24%;
+
+
+    }
+
+    .second{
+        top: 25px;
+        background-color: @5th-color;
+        flex: 0 0 56%;
+        opacity: 0;
+        transition: opacity 1s;
+        transition: top 0.25s;
+
+    }
+
+    .third{
+        flex: 0 0 20%;
+
+    }
+
+
+
+.search-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    height: 100%;
+    background-color: @1st-color;
+
+
+    div{
+        h3{ font-size: 26px; 
+            color: @3rd-color; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 0px;
+        }
+    }
+
+    ul{
+        background-color: @1st-color;
+        width: 100%;
+        list-style: none;
+        color: @5th-color;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px;
+    }
+
+    input{
+            background-color: @2nd-color;
+            width: 220px;
+            height: 40px;
+            border: none;
+            outline-color: @4th-color;
+            font-size: 20px;
+        }
+    button{
+        background-color: @5th-color;
+        color: @2nd-color;
+        outline-color: @4th-color;
+        height: 40px;
+        width: 50px;
+        font-size: 20px;
+        text-align: center;
+        border: none;
+        position: relative;
+        left: -3px;
+        cursor: pointer;
+    }
+}
+
+.addtions-container{
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: @3rd-color;
+    color: @5th-color;
+    height: 100%;
+    padding: 20px;
+
+    h3{
+        text-align: center;
+        font-size: 26px;
+        color: @5th-color;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+    form{
+        width: 200px;
+        position: relative;
+        display: block;
+        margin: auto;
+        opacity: 0;
+        height: 0px;
+        
+
+        &.formGrow{
+                height: 180px;
+                opacity: 1;
+                
+
+
+
+        }
+
+
+        input{
+                width: inherit;
+            }
+    }
+
+    .submitButton{
+        background-color: @1st-color;
+        color: @2nd-color;
+        border: none;
+        outline: @4th-color;
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+        position: relative;
+        display: block;
+        margin: auto;
+        border-radius: 50px;
+        font-size: 25px;
+        padding: 0px;
+        margin-bottom: 10px;
+
+        &&::hover{
+            top: -2px;
+        }
+
+        &&::active{
+            bottom: -2px;
+        }
+
+
+    }
+
+}
+
+//========== movement addClasses =======
+
+.secondMove{
+        opacity: 1;
+        top: 50px;
+}
+
