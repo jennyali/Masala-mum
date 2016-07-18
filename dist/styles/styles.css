@@ -13,6 +13,7 @@ body {
   background-size: 100%;
   background-origin: left;
   color: #080708;
+  padding: 0;
 }
 * {
   box-sizing: border-box;
