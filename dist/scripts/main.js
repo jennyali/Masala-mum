@@ -77,7 +77,13 @@ var resultsList = $(".resultsList");
 $(".ingredientMatch").on('click', function(){
     $(this).val("");
     resultsList.empty('li');
+    $('.results-section').css('left','-310px');
+    $('.titles').css('height', '100%');
+    $('.titles h3').css('opacity', '1');
+    $('.titles p').css('opacity', '1');
 });
+
+
 
 
 searchButton.on('click',function(){
@@ -117,6 +123,10 @@ function removeRecipeDetails() {
 
 
 resultsList.on('click', '.listItem', function(){
+    $('.titles').css('height', '160px');
+    $('.titles h3').css('opacity', '0');
+    $('.titles p').css('opacity', '0');
+
     $('.second').toggleClass('secondMove');
 
     removeRecipeDetails();
@@ -135,8 +145,26 @@ resultsList.on('click', '.listItem', function(){
 
 $()
 
-//============= Output containers =============
+
+$('.searchButton').on('click',function(){
+    $('.results-section').css('left','0px');
+    $('.results-title').css('opacity','0.6');
+    $('.resultsList').css('left','0px');
+
+});
 
 
 
+
+/*
+function emptyList(){
+    if($('.results-section').css('left') == '0px'){
+        
+        $('main').on('click',function(){
+        resultsList.empty('li');
+        $('.results-section').css('left','-310px');
+        });
+        };
+}
+*/
 });

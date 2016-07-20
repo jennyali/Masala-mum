@@ -64,6 +64,8 @@ body {
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 .input-box input {
   margin-top: 20px;
@@ -76,9 +78,10 @@ body {
   padding-left: 25px;
   outline: none;
   border: 1px solid #F15025;
+  background-color: #E6E8E6;
 }
 .input-box input:focus {
-  box-shadow: -2px 2px 173px 8px #ffffff;
+  background-color: #FFFFFF;
 }
 .input-box button {
   margin-top: 20px;
@@ -91,6 +94,11 @@ body {
   border: none;
   background-color: #F15025;
   color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+}
+.input-box button:active {
+  border: #FFFFFF 1px solid;
 }
 .additions-box {
   margin-top: 20px;
@@ -138,13 +146,77 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   color: #FFFFFF;
+  height: 100%;
+  position: relative;
+  z-index: 1;
 }
 .titles h1 {
   font-size: 72px;
+  display: block;
+  opacity: 1;
 }
 .titles h3 {
   font-size: 36px;
   margin: 0px;
+  display: block;
+  opacity: 1;
+}
+.titles p {
+  display: block;
+  opacity: 1;
+}
+.results-section {
+  height: 500px;
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  left: -310px;
+  border-style: 1px solid #CED0CE;
+  color: #FFFFFF;
+  transition: left 0.5s;
+  overflow: hidden;
+}
+.results-section .results-title {
+  background-color: #080708;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #FFFFFF;
+  opacity: 0;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  transition: opacity 0.5s;
+  position: relative;
+  z-index: 2;
+}
+.results-section .results-title div {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.results-section .results-title h4 {
+  text-align: center;
+}
+.results-section .resultsList {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  width: 250px;
+  height: 250px;
+  top: 0px;
+  z-index: 1;
+  left: -260px;
+  transition: left 0.5s;
+}
+.results-section .resultsList li {
+  list-style: none;
+  border-bottom: 1px solid #F15025;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
